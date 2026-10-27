@@ -39,10 +39,10 @@ From section 9:
 - [x] Android release keystore generated **outside the repository**
       (`C:\Users\monil\habitpulse-keys`), with `android/key.properties`
       gitignored and a debug-signing fallback.
-- [x] Signed **AAB** (`app-release.aab`, 67.8 MB) and **APK**
-      (`app-release.apk`, 71.0 MB); certificate `CN=HabitPulse`.
+- [x] Signed **AAB** (`app-release.aab`, 64.7 MB) and **APK**
+      (`app-release.apk`, 67.7 MB); certificate `CN=HabitPulse`.
 - [x] Windows **release** build (`habitpulse.exe`) launches and responds.
-- [x] **MSIX** installer (`habitpulse.msix`, 17.3 MB) created with the `msix`
+- [x] **MSIX** installer (`habitpulse.msix`, 16.5 MB) created with the `msix`
       package. It is signed with a **self-signed test certificate**, so Windows
       will warn until a trusted code-signing certificate is used.
 
@@ -52,10 +52,10 @@ From section 9:
 | --- | --- |
 | `flutter analyze` | ✅ No issues |
 | `flutter test` | ✅ **116 tests pass** |
-| Android AAB (release, signed) | ✅ 67.8 MB |
-| Android APK (release, signed) | ✅ 71.0 MB |
+| Android AAB (release, signed) | ✅ 64.7 MB |
+| Android APK (release, signed) | ✅ 67.7 MB |
 | Windows release exe | ✅ launched, window “HabitPulse”, responding |
-| Windows MSIX | ✅ 17.3 MB, self-signed test cert |
+| Windows MSIX | ✅ 16.5 MB, self-signed test cert |
 | JSON/CSV export | ✅ builders tested; device share/save needs one manual tap |
 | Privacy policy + README + QA | ✅ present |
 | Release APK on a phone | ⏳ install and smoke-test |
