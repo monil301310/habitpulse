@@ -135,6 +135,10 @@ Pushed to **<https://github.com/monil301310/habitpulse>** (private) on
   Windows`.
 - Verified: `.env`, `android/key.properties`, keystores, builds and installers
   are **not** in the repository.
+- Binaries are published separately on the
+  [v1.0.0 release](https://github.com/monil301310/habitpulse/releases/tag/v1.0.0):
+  signed APK, Play AAB and Windows MSIX, each with a SHA-256 in the release notes.
+  `build/` stays gitignored because it is generated and contains a copy of `.env`.
 - To make it public: GitHub → repository → **Settings → General → Danger Zone →
   Change visibility**. The screenshots include personal habit names, so review
   them first.
