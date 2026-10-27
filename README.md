@@ -4,6 +4,7 @@ A focused habit tracker for Android phone, Android tablet and Windows —
 offline-first, with heatmaps, streaks, reminders and optional cloud sync.
 
 **Repository:** <https://github.com/monil301310/habitpulse>
+**Downloads:** [Releases](https://github.com/monil301310/habitpulse/releases) — installable APK, Play AAB and Windows MSIX.
 
 One Flutter codebase builds both apps. The local database is Drift (SQLite),
 state is Riverpod, and Supabase provides optional accounts and sync. Android adds
