@@ -23,7 +23,11 @@ class AuthService {
     required String email,
     required String password,
   }) {
-    return _client.auth.signUp(email: email, password: password);
+    return _client.auth.signUp(
+      email: email,
+      password: password,
+      emailRedirectTo: redirectUrl,
+    );
   }
 
   Future<void> sendMagicLink(String email) {

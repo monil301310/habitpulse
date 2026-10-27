@@ -42,9 +42,11 @@ Phase 8 final pass. Re-run the automated commands after any change.
 
 ## Manual — Cloud
 
-- [ ] Supabase schema + RLS applied.
-- [ ] Email/password, magic link and Google sign-in.
-- [ ] Phone → Windows change appears within ~5 seconds.
+- [x] Supabase schema + RLS applied.
+- [x] Android release APK has the `INTERNET` permission (verified with `aapt2`).
+- [x] Sign-up passes the deep-link `emailRedirectTo` instead of the Site URL.
+- [ ] Email/password, magic link and Google sign-in on the rebuilt APK.
+- [ ] Confirmation email opens `io.supabase.habitpulse://login-callback`.
 - [ ] Offline edit syncs on reconnect.
 - [ ] Sign-out clears local data and notifications.
 - [ ] Conflict rule: Done beats Missed within a few seconds.

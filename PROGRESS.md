@@ -72,6 +72,25 @@ From section 9:
 
 ---
 
+### Revision 2 — release hotfix (28 Oct 2026)
+
+Two bugs only visible in the installed release build, found on the phone/tablet:
+
+1. **Android release had no INTERNET permission.** Flutter puts it only in the
+   debug/profile manifests, so release builds failed with
+   `Failed host lookup ... (OS Error: No address associated with hostname)`.
+   Added `android.permission.INTERNET` to the main manifest; verified with
+   `aapt2 dump permissions`.
+2. **Email confirmation fell back to the localhost Site URL.** `signUp` did not
+   pass `emailRedirectTo`; it now uses
+   `io.supabase.habitpulse://login-callback`.
+
+Rebuilt and replaced the signed APK/AAB, Windows release, portable ZIP and MSIX
+on the `v1.0.0` release with new SHA-256 checksums. Windows was unaffected by the
+permission bug but now also sends the deep-link redirect.
+
+---
+
 ## 2. Remaining manual checks
 
 1. `adb install -r build\app\outputs\flutter-apk\app-release.apk` and repeat the
