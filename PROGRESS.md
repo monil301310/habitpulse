@@ -128,6 +128,13 @@ Bump `AppConstants.schemaVersion` and add an `if (from < N)` step in
 
 ## 5. Repository
 
-The project is ready to publish. `.env`, `android/key.properties`, keystores,
-builds and installers are gitignored. GitHub upload is handled after Phase 8
-(see the hand-off notes).
+Pushed to **<https://github.com/monil301310/habitpulse>** (private) on
+27 Oct 2026.
+
+- Initial commit: `HabitPulse 1.0.0: offline-first habit tracker for Android and
+  Windows`.
+- Verified: `.env`, `android/key.properties`, keystores, builds and installers
+  are **not** in the repository.
+- To make it public: GitHub → repository → **Settings → General → Danger Zone →
+  Change visibility**. The screenshots include personal habit names, so review
+  them first.

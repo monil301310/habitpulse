@@ -57,4 +57,4 @@ Phase 8 final pass. Re-run the automated commands after any change.
 - [x] Privacy policy present (`PRIVACY.md`).
 - [x] README covers install, usage, build and cloud setup.
 - [ ] Release artifacts checksummed (optional).
-- [ ] Repository pushed to GitHub.
+- [x] Repository pushed to GitHub (private): <https://github.com/monil301310/habitpulse>.
